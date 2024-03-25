@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 8px 8px 0 0;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .subgroup {
+            margin-bottom: 20px;
+        }
+        .subgroup h3 {
+            margin-top: 0;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .subgroup-content {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        .card a {
+            display: block;
+            margin-top: 5px;
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meus Links</h1>
+    </header>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab" style="background-color: #007bff;" onclick="openTab(event, 'grupo1')">SEFAZ</div>
+            <div class="tab" style="background-color: #28a745;" onclick="openTab(event, 'grupo2')">NTI</div>
+            <div class="tab" style="background-color: #ffc107;" onclick="openTab(event, 'grupo3')">MESTRADO</div>
+            <div class="tab" style="background-color: #dc3545;" onclick="openTab(event, 'grupo4')">MENTORIA</div>
+            <div class="tab" style="background-color: #6f42c1;" onclick="openTab(event, 'grupo5')">DECODER</div>
+        </div>
+        <div id="grupo1" class="tab-content">
+            <div class="subgroup">
+                <h3 onclick="toggleSubgroup(this)">GITHUB</h3>
+                <div class="subgroup-content">
+                    <div class="card">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                    </div>
+                </div>
+            </div>
+            <div class="subgroup">
+                <h3 onclick="toggleSubgroup(this)">BACKGROUNDS</h3>
+                <div class="subgroup-content">
+                    <div class="card">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div id="grupo2" class="tab-content">
+            <div class="subgroup">
+                <h3 onclick="toggleSubgroup(this)">GITHUB</h3>
+                <div class="subgroup-content">
+                    <div class="card">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                    </div>
+                </div>
+            </div>
+            <div class="subgroup">
+                <h3 onclick="toggleSubgroup(this)">AMBIENTES</h3>
+                <div class="subgroup-content">
+                    <div class="card">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div id="grupo3" class="tab-content">
+            <div class="subgroup">
+                <h3 onclick="toggleSubgroup(this)">LATEX</h3>
+                <div class="subgroup-content">
+                    <div class="card">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                    </div>
+                </div>
+            </div>
+            <div class="subgroup">
+                <h3 onclick="toggleSubgroup(this)">PESQUISAS</h3>
+                <div class="subgroup-content">
+                    <div class="card">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div id="grupo5" class="tab-content">
+            <div class="subgroup">
+                <h3 onclick="toggleSubgroup(this)">CURSOS</h3>
+                <div class="subgroup-content">
+                    <div class="card">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                    </div>
+                </div>
+            </div>
+           
+			<div class="subgroup">
+                <h3 onclick="toggleSubgroup(this)">DRIVE</h3>
+                <div class="subgroup-content">
+                    <div class="card">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div id="grupo4" class="tab-content">
+            <div class="subgroup">
+                <h3 onclick="toggleSubgroup(this)">DISCORD</h3>
+                <div class="subgroup-content">
+                    <div class="card">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                    </div>
+                </div>
+            </div>
+            <div class="subgroup">
+                <h3 onclick="toggleSubgroup(this)">PLANILHAS</h3>
+                <div class="subgroup-content">
+                    <div class="card">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                    </div>
+                </div>
+            </div>
+			<div class="subgroup">
+                <h3 onclick="toggleSubgroup(this)">DRIVE</h3>
+                <div class="subgroup-content">
+                    <div class="card">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Adicione conteúdo para os outros grupos conforme necessário -->
+    </div>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        function toggleSubgroup(element) {
+            var content = element.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
