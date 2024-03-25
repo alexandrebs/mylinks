@@ -34,6 +34,10 @@
             color: #fff;
             cursor: pointer;
             border-radius: 8px 8px 0 0;
+            transition: background-color 0.3s;
+        }
+        .tab:hover {
+            background-color: #666;
         }
         .tab-content {
             display: none;
@@ -52,26 +56,41 @@
             padding: 10px;
             cursor: pointer;
             border-radius: 8px;
-        }
-        .subgroup-content {
-            display: none;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border-radius: 0 0 8px 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .card {
-            background-color: #f9f9f9;
-            padding: 15px;
             margin-bottom: 10px;
-            border-radius: 8px;
+            text-align: center;
+            transition: background-color 0.3s;
         }
-        .card a {
-            display: block;
-            margin-top: 5px;
-            text-decoration: none;
-            color: #007bff;
+        .subgroup h3:hover {
+            background-color: #0056b3;
         }
+         .subgroup-content {
+        display: none;
+        padding: 15px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.1); /* Adiciona uma borda suave */
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .card a {
+        display: block;
+        margin-bottom: 5px;
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .card a:hover {
+        color: #0056b3;
+    }
+	.card strong {
+    font-weight: bold;
+    color: #333; /* Cor desejada */
+}
+
     </style>
 </head>
 <body>
@@ -90,30 +109,27 @@
             <div class="subgroup">
                 <h3 onclick="toggleSubgroup(this)">GITHUB</h3>
                 <div class="subgroup-content">
-                    <div class="card">
-                        <a href="https://gitlab.sefaz.se.gov.br/supertec/arsis/g4/sit">https://gitlab.sefaz.se.gov.br/supertec/arsis/g4/sit</a>
-						<a href="https://gitlab.sefaz.se.gov.br/supertec/arsis/g4/sped">https://gitlab.sefaz.se.gov.br/supertec/arsis/g4/sped</a>
-						<a href="https://gitlab.sefaz.se.gov.br/supertec/arsop/arquitetura/supertec">https://gitlab.sefaz.se.gov.br/supertec/arsop/arquitetura/supertec</a>
-                        <a href="https://gitlab.sefaz.se.gov.br/git/bd/der/fazendario">https://gitlab.sefaz.se.gov.br/git/bd/der/fazendario</a>
-						<a href="https://gitlab.sefaz.se.gov.br/supertec/arsop/bd">https://gitlab.sefaz.se.gov.br/supertec/arsop/bd</a>
-						
-						<a href="https://gitlab.sefaz.se.gov.br/git/fazendario/sped/sped-iwp">Repositório SPED</a>
-						
-						
-                    </div>
-                </div>
+				<div class="card">
+					<a href="https://gitlab.sefaz.se.gov.br/supertec/arsis/g4/sit" target="_blank"><strong>-</strong> Tarefas SIT</a>
+					<a href="https://gitlab.sefaz.se.gov.br/supertec/arsis/g4/sped" target="_blank"><strong>-</strong> Tarefas SPED</a>
+					<a href="https://gitlab.sefaz.se.gov.br/supertec/arsop/bd" target="_blank"><strong>-</strong> Tarefas para BD</a>
+					<a href="https://gitlab.sefaz.se.gov.br/supertec/arsop/arquitetura/supertec" target="_blank"><strong>-</strong> Tarefas Arquitetura</a>
+					<a href="https://gitlab.sefaz.se.gov.br/git/bd/der/fazendario" target="_blank"><strong>-</strong> Repositório BD</a>
+					<a href="https://gitlab.sefaz.se.gov.br/git/fazendario/sped/sped-iwp" target="_blank"><strong>-</strong> Repositório SPED</a>
+				</div>
+			</div>
             </div>
             <div class="subgroup">
                 <h3 onclick="toggleSubgroup(this)">BACKGROUNDS</h3>
                 <div class="subgroup-content">
                     <div class="card">
-                        <a href="http://localhost/portal/admin/index.jsp">background localhost</a>
+                        <a href="http://localhost/portal/admin/index.jsp" target="_blank">Background localhost</a>
                         <a href="#">Link 2</a>
                     </div>
                 </div>
             </div>
         </div>
-		<div id="grupo2" class="tab-content">
+        <div id="grupo2" class="tab-content">
             <div class="subgroup">
                 <h3 onclick="toggleSubgroup(this)">GITHUB</h3>
                 <div class="subgroup-content">
@@ -133,7 +149,7 @@
                 </div>
             </div>
         </div>
-		<div id="grupo3" class="tab-content">
+        <div id="grupo3" class="tab-content">
             <div class="subgroup">
                 <h3 onclick="toggleSubgroup(this)">LATEX</h3>
                 <div class="subgroup-content">
@@ -153,7 +169,7 @@
                 </div>
             </div>
         </div>
-		<div id="grupo5" class="tab-content">
+        <div id="grupo5" class="tab-content">
             <div class="subgroup">
                 <h3 onclick="toggleSubgroup(this)">CURSOS</h3>
                 <div class="subgroup-content">
@@ -163,8 +179,7 @@
                     </div>
                 </div>
             </div>
-           
-			<div class="subgroup">
+            <div class="subgroup">
                 <h3 onclick="toggleSubgroup(this)">DRIVE</h3>
                 <div class="subgroup-content">
                     <div class="card">
@@ -174,13 +189,13 @@
                 </div>
             </div>
         </div>
-		<div id="grupo4" class="tab-content">
+        <div id="grupo4" class="tab-content">
             <div class="subgroup">
                 <h3 onclick="toggleSubgroup(this)">DISCORD</h3>
                 <div class="subgroup-content">
                     <div class="card">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
+                        <a href="https://discord.com/channels/1214180656406466600/1214180658730115145" target="_blank">Discord GrowUP</a>
+                        <a href="#" target="_blank"></a>
                     </div>
                 </div>
             </div>
@@ -188,12 +203,14 @@
                 <h3 onclick="toggleSubgroup(this)">PLANILHAS</h3>
                 <div class="subgroup-content">
                     <div class="card">
-                        <a href="#">Link 1</a>
+                        <a href="https://docs.google.com/spreadsheets/d/1S5xYBSK0yoeNK2K7HyQcE96QcIcE0LwT/edit#gid=1962578740" target="_blank">Desafio das Empresas</a>
+                        <a href="https://docs.google.com/spreadsheets/d/19a9ELSrdrojA-XIZn49EFbC2IsHLVoyE/edit#gid=28499698" target="_blank">RiseUP</a>
+                        <a href="https://docs.google.com/spreadsheets/d/1z6-X4ukoYLdY9qateFHLuB-TCme_1EAo/edit#gid=28499698" target="_blank">GrowUP</a>
                         <a href="#">Link 2</a>
                     </div>
                 </div>
             </div>
-			<div class="subgroup">
+            <div class="subgroup">
                 <h3 onclick="toggleSubgroup(this)">DRIVE</h3>
                 <div class="subgroup-content">
                     <div class="card">
@@ -231,3 +248,4 @@
     </script>
 </body>
 </html>
+
